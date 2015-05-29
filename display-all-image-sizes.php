@@ -3,7 +3,7 @@
 Plugin Name: Display All Image Sizes
 Description: Displays all sizes of each image, including name, dimensions, and permalink for each size. A major time-saver if you frequently use custom-generated image sizes.
 Author: Press Up
-Version: 1.0.2
+Version: 1.0.3
 Author URI: http://pressupinc.com/
 Text Domain: display-all-image-sizes
 */
