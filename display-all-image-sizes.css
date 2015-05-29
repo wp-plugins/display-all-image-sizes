@@ -1,0 +1,8 @@
+.wp-admin.post-type-attachment .compat-field-sizes input[type="text"], .compat-attachment-fields {
+	width: 100%;
+}
+
+.compat-attachment-fields .label {
+	width: 1%;
+	vertical-align: top;
+}
