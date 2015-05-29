@@ -3,21 +3,26 @@ Contributors: pressupinc
 Tags: image sizes, picture sizes, view image sizes, view image size links, different image sizes, thumbnails, thumbnail sizes, featured images, featured image sizes, attachment sizes
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 
-Requires content you specify to have a featured image set before they can be published.
+Displays all sizes of each image, including name, dimensions, and permalink for each size.
 
 == Description ==
 
 = View and Use Every Size of Your Images =
 
-When you upload an image to your WordPress site, WordPress auto-generates lots of sizes of it. Unfortunately, the Media Attachment page doesn't display any information about the different image sizes, or the permalinks to use them. And the Attachment Display settings inside "Add Media" doesn't always show you all the sizes that exist. Until now.
+When you upload an image to your WordPress site, WordPress auto-generates lots of sizes of it. However, there aren't many good ways to see and use those sizes:
+
+* The Media Attachment page in "Media" doesn't list anything about the different image sizes, or the permalinks to use them.
+* "Add Media" in the post editor doesn't always show you all the sizes that exist (such as sizes intended for featured images), and there's no easy way to simply copy an image's permalink.
+
+Until now! Display All Image Sizes displays information about every size of every image: name, dimensions, and permalink.
 
 = How to Use =
 
-Just install and activate the plugin, and you'll see a list of all sizes of each image in both the "Add Media" pop-up modal, and in each image's individual page in "Media."
+Just install and activate the plugin, and you'll see a list of all sizes of each image in both the "Add Media" pop-up modal, and in each image's individual page in "Media." (See Screenshots.)
 
 = Anything else? =
 
@@ -25,7 +30,7 @@ Well, read [read WPShout](http://wpshout.com/) for WordPress news and tutorials!
 
 == Installation ==
 
-Install and activate the plugin. It'll work by default, and doesn't register any options pages.
+Install Display All Image Sizes through "Add Plugin" or your favorite method, and activate it. It'll work by default, and it doesn't register any options pages.
 
 == Frequently Asked Questions ==
 
@@ -42,6 +47,9 @@ Let us know, happy to help!
 3. Sizes on "Edit Attachment." 
 
 == CHANGELOG ==
+
+= 1.0.2 (29.05.2015) =
+* readme.txt improvements
 
 = 1.0.1 (27.05.2015) =
 * Initial commit

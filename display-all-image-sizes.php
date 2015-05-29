@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: Display All Image Sizes
-Description: Makes every uploaded image's attachment page display all of the image's sizes, including name, dimension, and permalink for each size. A major time-saver if you frequently use custom-generated image sizes.
+Description: Displays all sizes of each image, including name, dimensions, and permalink for each size. A major time-saver if you frequently use custom-generated image sizes.
 Author: Press Up
-Version: 1.0.1
+Version: 1.0.2
 Author URI: http://pressupinc.com/
 Text Domain: display-all-image-sizes
 */
