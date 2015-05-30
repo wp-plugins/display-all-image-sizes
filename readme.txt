@@ -3,7 +3,7 @@ Contributors: pressupinc
 Tags: image sizes, picture sizes, view image sizes, view image size links, different image sizes, thumbnails, thumbnail sizes, featured images, featured image sizes, attachment sizes
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 
@@ -49,6 +49,9 @@ Let us know, happy to help!
 3. Sizes on "Edit Attachment." 
 
 == CHANGELOG ==
+
+= 1.0.5 (30.05.2015) =
+* Banner filename typo :\
 
 = 1.0.4 (30.05.2015) =
 * Added banner image to Assets
