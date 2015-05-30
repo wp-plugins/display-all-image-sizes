@@ -3,7 +3,7 @@ Contributors: pressupinc
 Tags: image sizes, picture sizes, view image sizes, view image size links, different image sizes, thumbnails, thumbnail sizes, featured images, featured image sizes, attachment sizes
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 
@@ -28,6 +28,8 @@ Just install and activate the plugin, and you'll see a list of all sizes of each
 
 Well, read [read WPShout](http://wpshout.com/) for WordPress news and tutorials! And [contact us](http://pressupinc.com/) if you need help with WordPress.
 
+Image credit for banner: [woodleywonderworks](https://www.flickr.com/photos/wwworks/)
+
 == Installation ==
 
 Install Display All Image Sizes through "Add Plugin" or your favorite method, and activate it. It'll work by default, and it doesn't register any options pages.
@@ -47,6 +49,9 @@ Let us know, happy to help!
 3. Sizes on "Edit Attachment." 
 
 == CHANGELOG ==
+
+= 1.0.4 (30.05.2015) =
+* Added banner image to Assets
 
 = 1.0.3 (29.05.2015) =
 * Screenshots to Assets
