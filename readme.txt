@@ -3,7 +3,7 @@ Contributors: pressupinc
 Tags: image sizes, picture sizes, view image sizes, view image size links, different image sizes, thumbnails, thumbnail sizes, featured images, featured image sizes, attachment sizes
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 
@@ -16,7 +16,8 @@ Displays all sizes of each image, including name, dimensions, and permalink for 
 When you upload an image to your WordPress site, WordPress auto-generates lots of sizes of it. However, there aren't many good ways to see and use those sizes:
 
 * The Media Attachment page in "Media" doesn't list anything about the different image sizes, or the permalinks to use them.
-* "Add Media" in the post editor doesn't always show you all the sizes that exist (such as sizes intended for featured images), and there's no easy way to simply copy an image's permalink.
+* "Add Media" in the post editor doesn't always show you all the sizes that exist (such as sizes intended for featured images).
+* There's no easy way to simply copy a custom-sized image's permalink.
 
 Until now! Display All Image Sizes displays information about every size of every image: name, dimensions, and permalink.
 
@@ -49,6 +50,9 @@ Let us know, happy to help!
 3. Sizes on "Edit Attachment." 
 
 == CHANGELOG ==
+
+= 1.0.6 (02.06.2015) =
+* Fixed screenshot MIME types and one readme tweak
 
 = 1.0.5 (30.05.2015) =
 * Banner filename typo :\
