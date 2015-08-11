@@ -7,6 +7,10 @@
 	vertical-align: top;
 }
 
+#all-image-sizes-dropdown {
+	max-width: 100%;
+}
+
 #all-image-sizes-urls {
 	transition: all 1s ease-out;
 }

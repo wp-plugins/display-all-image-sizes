@@ -3,7 +3,7 @@
 Plugin Name: Display All Image Sizes
 Description: Displays all sizes of each image, including name, dimensions, and permalink for each size. A major time-saver if you frequently use custom-generated image sizes.
 Author: Press Up
-Version: 1.1.2
+Version: 1.1.3
 Author URI: http://pressupinc.com/
 Text Domain: display-all-image-sizes
 */
@@ -97,7 +97,7 @@ function wpshout_build_size_data_html($sizes) {
 		$size_data_html .= '<input type="hidden" name="'. $value['name'] . '" value="' . $value['link'] .'">';
 	}
 
-	$size_data_html .= '<br><br><label><span class="display-sizes if-js">Image URL (select a size from dropdown):</span><span class="display-sizes if-no-js">(Displaying each image URL requires JavaScript)</span></label><input id="all-image-sizes-urls" type="text" value="' . $sizes[0]['link'] . '" readonly>';
+	$size_data_html .= '<br><label><span class="display-sizes if-js">Image URL (select a size from dropdown):</span><span class="display-sizes if-no-js">(Displaying each image URL requires JavaScript)</span></label><input id="all-image-sizes-urls" type="text" value="' . $sizes[0]['link'] . '" readonly>';
 
 	return $size_data_html;
 }

@@ -2,8 +2,8 @@
 Contributors: pressupinc
 Tags: image sizes, picture sizes, view image sizes, view image size links, different image sizes, thumbnails, thumbnail sizes, featured images, featured image sizes, attachment sizes
 Requires at least: 3.5
-Tested up to: 4.2.2
-Stable tag: 1.1.2
+Tested up to: 4.2.4
+Stable tag: 1.1.3
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 
@@ -50,6 +50,9 @@ Let us know, happy to help!
 3. Sizes on "Edit Attachment." 
 
 == CHANGELOG ==
+
+= 1.1.3 (11.08.2015) =
+Styling cleanup
 
 = 1.1.2 (11.08.2015) =
 Fixed serious bug (incomplete array checking) causing plugin to freeze media library in some cases; added no-JS message
