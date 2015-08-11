@@ -3,13 +3,14 @@
 Plugin Name: Display All Image Sizes
 Description: Displays all sizes of each image, including name, dimensions, and permalink for each size. A major time-saver if you frequently use custom-generated image sizes.
 Author: Press Up
-Version: 1.0.6
+Version: 1.1.0
 Author URI: http://pressupinc.com/
 Text Domain: display-all-image-sizes
 */
 
 add_action( 'admin_enqueue_scripts', 'wpshout_enqueue_display_all_image_sizes_stylesheet' );
 function wpshout_enqueue_display_all_image_sizes_stylesheet() {
+	wp_enqueue_script('display-all-image-sizes', plugin_dir_url( __FILE__ ) . 'display-all-image-sizes.js', array( 'jquery' ));
 	wp_enqueue_style('display-all-image-sizes', plugin_dir_url( __FILE__ ) . 'display-all-image-sizes.css');
 }
 
@@ -80,12 +81,19 @@ function wpshout_build_size_data_html($sizes) {
 		return;
 	}
 
+	$size_data_html .= '<select id="all-image-sizes-dropdown">';
+
 	foreach($sizes as $key => $value) {
-		$size_data_html .= $value['name'] . ': ' .
-		$value['width'] . 'x' . $value['height'] . '<br>' .
-		'<input type="text" value="' . $value['link'] . '" readonly>' .
-		'<br><br>';
+		$size_data_html .= '<option value="' . $value['name'] .'">' . $value['name'] .  ': ' . $value['width'] . 'x' . $value['height'] . '</option>';
 	}
+
+	$size_data_html .= '</select>';
+
+	foreach($sizes as $key => $value) {
+		$size_data_html .= '<input type="hidden" name="'. $value['name'] . '" value="' . $value['link'] .'">';
+	}
+
+	$size_data_html .= '<br><br><label>Image URL (select a size from dropdown):</label><input id="all-image-sizes-urls" type="text" value="' . $sizes[0]['link'] . '" readonly>';
 
 	return $size_data_html;
 }

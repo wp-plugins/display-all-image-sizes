@@ -6,3 +6,11 @@
 	width: 1%;
 	vertical-align: top;
 }
+
+#all-image-sizes-urls {
+	transition: all 1s ease-out;
+}
+
+.input-changed-bg {
+	background-color: #5EFB6E !important;
+}
