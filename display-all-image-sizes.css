@@ -14,3 +14,15 @@
 .input-changed-bg {
 	background-color: #5EFB6E !important;
 }
+
+.display-sizes.if-no-js {
+	display: none;
+}
+
+.no-js .display-sizes.if-no-js {
+	display: initial;
+}
+
+.no-js .display-sizes.if-js {
+	display: none;
+}

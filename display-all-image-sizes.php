@@ -3,7 +3,7 @@
 Plugin Name: Display All Image Sizes
 Description: Displays all sizes of each image, including name, dimensions, and permalink for each size. A major time-saver if you frequently use custom-generated image sizes.
 Author: Press Up
-Version: 1.1.1
+Version: 1.1.2
 Author URI: http://pressupinc.com/
 Text Domain: display-all-image-sizes
 */
@@ -18,16 +18,18 @@ add_filter( 'attachment_fields_to_edit', 'wpshout_display_all_image_sizes', 10, 
 function wpshout_display_all_image_sizes( $form_fields, $post ) {
 	$size_names = get_intermediate_image_sizes( $post->ID );
 
+
 	// Returns array of sizes, each containing array of name, link, length, height
 	$sizes = wpshout_return_sizes( $size_names, $post->ID );
-
+	
 	if( ! is_array($sizes) ) {
 		return $form_fields;
 	}
 
+
 	$size_data_html = wpshout_build_size_data_html($sizes);
 
-	if( ! isset($size_data_html) || $size_data_html == '') {
+	if( ! isset($size_data_html) || $size_data_html == false) {
 		return $form_fields;
 	}
 
@@ -46,12 +48,14 @@ http://justintadlock.com/archives/2011/01/28/linking-to-all-image-sizes-in-wordp
 function wpshout_return_sizes( $size_names, $post_id ) {
 
 	/* Get the intermediate image sizes and add the full size to the array. */
-	if( ! is_array($size_names) ) {
+	if( ! is_array($size_names) || count($size_names) === 0 ) {
 		return false;
 	}
 
 	$size_names[] = 'full';
 
+	$size_data = array();
+	
 	/* Loop through each of the image sizes. */
 	foreach ( $size_names as $size_name ) {
 
@@ -77,11 +81,11 @@ function wpshout_return_sizes( $size_names, $post_id ) {
 
 /* Build HTML size data string based on array of size data */
 function wpshout_build_size_data_html($sizes) {
-	if( ! is_array($sizes)) {
-		return;
+	if( ! is_array($sizes) || count($sizes) === 0) {
+		return false;
 	}
 
-	$size_data_html .= '<select id="all-image-sizes-dropdown">';
+	$size_data_html = '<select id="all-image-sizes-dropdown">';
 
 	foreach($sizes as $key => $value) {
 		$size_data_html .= '<option value="' . $value['name'] .'">' . $value['name'] .  ': ' . $value['width'] . 'x' . $value['height'] . '</option>';
@@ -93,7 +97,7 @@ function wpshout_build_size_data_html($sizes) {
 		$size_data_html .= '<input type="hidden" name="'. $value['name'] . '" value="' . $value['link'] .'">';
 	}
 
-	$size_data_html .= '<br><br><label>Image URL (select a size from dropdown):</label><input id="all-image-sizes-urls" type="text" value="' . $sizes[0]['link'] . '" readonly>';
+	$size_data_html .= '<br><br><label><span class="display-sizes if-js">Image URL (select a size from dropdown):</span><span class="display-sizes if-no-js">(Displaying each image URL requires JavaScript)</span></label><input id="all-image-sizes-urls" type="text" value="' . $sizes[0]['link'] . '" readonly>';
 
 	return $size_data_html;
 }
