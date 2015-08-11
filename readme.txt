@@ -3,7 +3,7 @@ Contributors: pressupinc
 Tags: image sizes, picture sizes, view image sizes, view image size links, different image sizes, thumbnails, thumbnail sizes, featured images, featured image sizes, attachment sizes
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 1.0.6
+Stable tag: 1.1.1
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 
@@ -50,6 +50,12 @@ Let us know, happy to help!
 3. Sizes on "Edit Attachment." 
 
 == CHANGELOG ==
+
+= 1.1.1 (10.08.2015) =
+* ...and then updated readme file with new version
+
+= 1.1.0 (10.08.2015) =
+* Changed image list to a dropdown
 
 = 1.0.6 (02.06.2015) =
 * Fixed screenshot MIME types and one readme tweak
